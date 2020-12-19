@@ -9,7 +9,13 @@ function AuthRoute({ component: Component, ...rest }) {
     <Route
       {...rest}
       render={(props) =>
-        user ? <Component {...props} /> : <Redirect to='/' />
+        user && (user.userLevel === 0 || user.userLevel === 1) ? (
+          <Component {...props} />
+        ) : user && user.userLevel === -1 ? (
+          <Redirect to="/aboutYourself" />
+        ) : (
+          <Redirect to='/' />
+        )
       }
     />
   );
