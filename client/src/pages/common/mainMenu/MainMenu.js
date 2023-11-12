@@ -21,7 +21,7 @@ export default () => {
                 type="left"
                 mode="random"
               >
-                Welcome to SCHOOL ATTENDANCE SYSTEM
+                Welcome to Attendance Face Recognition App TINHS
               </Texty>
             </Title>
             <Texty
