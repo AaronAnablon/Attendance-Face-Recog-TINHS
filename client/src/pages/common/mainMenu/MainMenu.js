@@ -24,13 +24,13 @@ export default () => {
                 Welcome to Attendance Face Recognition App TINHS
               </Texty>
             </Title>
-            <Texty
+            {/* <Texty
               type="left"
               mode="smooth"
               interval="20"
             >
               An attendance system with facial recognition
-            </Texty>
+            </Texty> */}
 
             <br />
             <Button type='primary' htmlType='submit'>
